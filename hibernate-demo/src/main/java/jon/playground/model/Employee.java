@@ -7,17 +7,19 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Getter;
+import lombok.Setter;
 
-import lombok.ToString;
 
 @Entity
 @Table(name = "employees")
-@ToString
+@Getter
+@Setter
 public class Employee {
 	
 	@Id
 	@Column
-	private int id;
+	private Long id;
 	
 	@Column
 	private String name;
@@ -27,51 +29,9 @@ public class Employee {
 	
 	@Column
 	private String department;
-
 	
 	@Column
 	private Date dob;
-	
-	
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-
-	public String getDepartment() {
-		return department;
-	}
-
-	public void setDepartment(String department) {
-		this.department = department;
-	}
-
-	public Date getDob() {
-		return dob;
-	}
-
-	public void setDob(Date dob) {
-		this.dob = dob;
-	}
 	
 	
 }

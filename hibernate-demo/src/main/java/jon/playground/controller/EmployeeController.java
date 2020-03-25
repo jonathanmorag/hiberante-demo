@@ -20,7 +20,7 @@ import jon.playground.service.EmployeeService;
 public class EmployeeController {
 	
 	@Autowired
-	EmployeeService service;
+	private EmployeeService service;
 	
 	@GetMapping("/employees")
 	public List<Employee> get() {

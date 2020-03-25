@@ -1,10 +1,10 @@
-package in.bushansirgur.springbootcrud.springbootcrudapi;
+package jon.playground;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootcrudapiApplicationTests {
+class DemoAppTests {
 
 	@Test
 	void contextLoads() {
